@@ -11,13 +11,19 @@ shinyUI(fluidPage(
       checkboxInput("showplot","Place a tick if you want to show the temperature plot",value = T),
       h5("Click submit button to run the app"),
       submitButton("submit") #NEW
+      
+      
     ),
     mainPanel(
       plotOutput("plot1"),
-      h3("You want to convert"),
+      h4("You want to convert"),
       textOutput("text1"),
-      h3("You convert it to"),
-      textOutput("text2")
+      h4("You convert it to"),
+      textOutput("text2"),
+      h4("=========================================="),
+      h5("You can access the code through this link"),
+      a("https://github.com/RestyAmon/developingdataproductW4")
+            
       
     )
   )
